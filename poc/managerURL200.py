@@ -14,7 +14,7 @@ imrport requests
 headers = {'user-agent': 'ceshi/0.0.1'}
 
 def islive(rip,rport):
-    rip='http://' + str(ur)+':'+str(rport)+'/console/login/LoginForm.jsp'
+    rip='http://' + str(rip)+':'+str(rport)+'/console/login/LoginForm.jsp'
     r = requests.get(rip, headers=headers)
     return r.status_code
 
