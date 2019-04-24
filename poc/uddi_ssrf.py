@@ -8,8 +8,8 @@
 |_| \_\__,_|_.__/|_.__/|_|\__|_|  |_|\__,_|___/_|\_\
 
 '''
-imrport sys
-imrport requests
+import sys
+import requests
 
 headers = {'user-agent': 'ceshi/0.0.1'}
 
