@@ -63,6 +63,6 @@ def run(rip,rport,index):
     checkVul(rs,server_addr,index)
 
 if __name__=="__main__":
-    rip = '222.85.76.240'
-    rport = 80
+    #rip = '222.85.76.240'
+    #rport = 80
     run(rip,rport,0)
