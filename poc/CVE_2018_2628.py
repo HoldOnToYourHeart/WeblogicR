@@ -75,6 +75,6 @@ def run(dip,dport,index):
 
 
 if __name__=="__main__":
-    dip = sys.argv[1]
-    dport = int(sys.argv[2])
-    run(dip,dport,0)
+    #dip = sys.argv[1]
+    #dport = int(sys.argv[2])
+    run(rip,rdport,0)
