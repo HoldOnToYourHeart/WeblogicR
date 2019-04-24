@@ -69,4 +69,4 @@ def run(rip,rport):
     print result
 
 if __name__ == '__main__':
-    run('127.0.0.1',7001)
+    run(rip,rport)
