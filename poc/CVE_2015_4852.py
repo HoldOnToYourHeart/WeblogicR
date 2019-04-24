@@ -54,4 +54,4 @@ def run(rip,rport):
     print(u"[*]测试返回内容为{}".format(response))
 
 if __name__ == '__main__':
-    run('127.0.0.1',7001)
+    run(rip, rport)
